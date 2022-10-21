@@ -3,7 +3,7 @@ import { getDbConnection } from '../db'
 import jwt from 'jsonwebtoken'
 
 export const updateUserInfoRoute = {
-    path: 'api/users/:userId',
+    path: '/api/users/:userId',
     method: 'put',
     handler: async (req, res) => {
         const { authorization } = req.headers
